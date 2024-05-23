@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* ___________END OF RESET______________ */
+
+/* __________ */
+
+.header-section {
+  display: grid;
+  overflow: hidden;
+  position: relative;
+}
+
+.black-box-desktop {
+  display: none;
+}
+
+.mobile-version-img {
+  width: 100%;
+}
+.tablet-version-img {
+  display: none;
+}
+
+.header-text-box {
+  padding: 12px;
+}
+
+.header-title {
+  font-family: Big Shoulders Display;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.text {
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+.header-text {
+  margin-bottom: 16px;
+  color: #444444;
+}
+
+.get-to-location-page-btn {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.btn-part-one {
+  font-family: Big Shoulders Display;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 23.94px;
+  letter-spacing: 3px;
+  padding: 16px;
+
+  background: #151515;
+}
+.btn-part-two {
+  background-color: #d5966c;
+}
+.icon-arrow {
+  width: 24px;
+  height: 24px;
+
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .header-section {
+    grid-template-columns: 2fr 1fr;
+  }
+  .mobile-version-img {
+    display: none;
+  }
+  .tablet-version-img {
+    display: block;
+    width: 100%;
+  }
+  .header-text-box {
+    position: absolute;
+    top: 200px;
+    left: 450px;
+  }
+}
+/* @media (min-width: 1275px) {
+  .header-section {
+    grid-template-columns: 3fr 2fr 1fr;
+  }
+
+  .black-box-desktop {
+    display: block;
+    background-color: black;
+  }
+} */
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
