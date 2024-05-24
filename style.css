@@ -91,7 +91,6 @@ h6 {
 }
 
 .header-text-box {
-  padding: 12px;
 }
 
 .header-title {
@@ -99,20 +98,19 @@ h6 {
   font-size: 60px;
   font-weight: 700;
   line-height: 55px;
-  margin-bottom: 16px;
+  padding: 12px;
   text-align: left;
 }
 
-.text {
-  font-family: Outfit;
-  font-size: 16px;
-  font-weight: 400;
+.header-text {
+  margin: 16px;
+  align-items: center;
+  text-align: center;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 28px;
   text-align: left;
-}
-.header-text {
-  margin-bottom: 16px;
-  color: #444444;
 }
 
 .get-to-location-page-btn {
@@ -140,6 +138,7 @@ h6 {
 
   padding: 15px;
 }
+
 @media (min-width: 768px) {
   .header-section {
     grid-template-columns: 2fr 1fr;
@@ -153,21 +152,104 @@ h6 {
   }
   .header-text-box {
     position: absolute;
-    top: 200px;
+    top: 400px;
     left: 450px;
   }
+  .title {
+    position: absolute;
+    top: 240px;
+    left: 450px;
+    font-size: 62px;
+    font-weight: 700;
+  }
 }
-/* @media (min-width: 1275px) {
+
+@media (min-width: 1275px) {
   .header-section {
-    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
   }
 
   .black-box-desktop {
     display: block;
     background-color: black;
   }
-} */
 
+  .header-title {
+    mix-blend-mode: difference;
+    color: aliceblue;
+    display: inline-block;
+    width: 345px;
+
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 72px;
+    transform: translate(-50%);
+  }
+
+  .header-text-box {
+    top: 400px;
+    transform: translateX(100%);
+  }
+  .header-text {
+    width: 650px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 64px;
+    margin-bottom: 64px;
+    text-align: left;
+  }
+}
+
+/* GALLERY SECTION */
+
+.gallery-section {
+  padding: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+.gallery-img {
+  width: 100%;
+}
+.gird-item-five {
+  background-color: #151515;
+  text-align: center;
+  padding: 18px;
+}
+
+.gallery-title {
+  font-family: Big Shoulders Display;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 45px;
+  margin-bottom: 18px;
+  color: #151515;
+
+  text-align: left;
+}
+
+.gallery-text {
+  font-family: Outfit;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #444444;
+
+  text-align: left;
+}
+.text-color-white {
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .gallery-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-item-one {
+    grid-column: 2 / 1;
+  }
+}
 /* - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
