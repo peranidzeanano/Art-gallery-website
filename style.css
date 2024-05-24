@@ -73,6 +73,11 @@ h6 {
 
 /* __________ */
 
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .header-section {
   display: grid;
   overflow: hidden;
@@ -88,9 +93,6 @@ h6 {
 }
 .tablet-version-img {
   display: none;
-}
-
-.header-text-box {
 }
 
 .header-title {
@@ -219,10 +221,11 @@ h6 {
 
 .gallery-title {
   font-family: Big Shoulders Display;
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 45px;
-  margin-bottom: 18px;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 60px;
+  text-align: left;
+
   color: #151515;
 
   text-align: left;
@@ -245,11 +248,35 @@ h6 {
   .gallery-section {
     grid-template-columns: 1fr 1fr;
   }
-
   .grid-item-one {
-    grid-column: 2 / 1;
+    grid-column: 2 / -1;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+  .grid-item-two {
+    grid-row: 1 / 2;
+  }
+
+  .grid-item-three {
+    grid-row: 2 / 4;
   }
 }
+@media (min-width: 1275px) {
+  .gallery-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 400px;
+    margin: 0 auto;
+  }
+  .gird-item-five {
+    width: 445px;
+    height: 377px;
+  }
+}
+
 /* - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
