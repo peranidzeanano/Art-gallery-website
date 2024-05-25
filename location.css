@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* ___________END OF RESET______________ */
+.header-section {
+  position: relative;
+}
+
+.map-img-mobile {
+  width: 100%;
+}
+
+.map-img-tablet {
+  display: none;
+}
+
+.map-img-desktop {
+  display: none;
+}
+.home-page-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  padding: 15px;
+}
+
+.home-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.back-to-home-icon {
+  background-color: #d5966c;
+  color: #fff;
+}
+
+.back-to-home-text {
+  background-color: black;
+  color: #fff;
+  font-family: Big Shoulders Display;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 23.94px;
+  letter-spacing: 3px;
+  text-align: left;
+
+  padding: 15px;
+}
+
+.icon-arrow {
+  display: inline-block;
+  padding: 14px;
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .map-img-mobile {
+    display: none;
+  }
+
+  .map-img-tablet {
+    display: block;
+    width: 100%;
+  }
+
+  .map-img-desktop {
+    display: none;
+  }
+  .home-btn {
+    left: 25px;
+  }
+}
+
+@media (min-width: 1436px) {
+  .map-img-mobile {
+    display: none;
+  }
+
+  .map-img-tablet {
+    display: none;
+  }
+
+  .map-img-desktop {
+    display: block;
+    width: 100%;
+  }
+  .home-btn {
+    left: 100px;
+  }
+}
+
+/* ____________________ */
+
+.location-section {
+  display: grid;
+  background-color: black;
+  padding: 30px;
+  gap: 12px;
+}
+
+.addres {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+
+  gap: 10px;
+}
+
+.main-title {
+  font-family: Big Shoulders Display;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  color: #fff;
+}
+
+.main-text {
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+  text-align: left;
+}
+.second-title {
+  font-family: Big Shoulders Display;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 32px;
+  text-align: left;
+  color: #d5966c;
+}
+
+@media (min-width: 768px) {
+  .location-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .main-title {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 80px;
+    text-align: left;
+  }
+}
+
+/* FOOTER */
+.footer {
+  color: black;
+  background-color: #d5966c;
+  display: grid;
+  gap: 18px;
+  padding: 36px;
+}
+
+.footer-title {
+  font-family: Big Shoulders Display;
+  font-size: 30px;
+  font-weight: 700;
+
+  width: 200px;
+}
+
+.footer-text {
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+.social-icon {
+  display: flex;
+  gap: 14px;
+}
+.facebook {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s;
+}
+
+.instagram {
+  width: 30px;
+  height: 30px;
+}
+
+.twitter {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1275px) {
+  .footer-text {
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+  }
+  .social-icon :hover {
+    color: #fff;
+  }
+}
